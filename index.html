@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validator</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Let's set up you</h2>
+        <span>Already have an account? <a href="" class="sign-in">Sign in</a></span>
+
+        <div class="form-control floating">
+          <input id="name" class="floating__input" name="name" type="text" placeholder="Your name" value="" />
+          <label id="input__your_name" class="floating__label" data-content="Your name"></label>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control floating">
+          <input id="email" type="email" class="floating__input" name="email address" placeholder="Email address" value="" />
+          <label id="input__email" class="floating__label" data-content="Email address"></label>
+          <small>Error message</small>
+        </div>
+
+        <!-- <div class="form-control floating">
+          <input id="describe" type="text" class="floating__input dropbtn" name="describe" placeholder="I would describe my  user type as" value="" />
+          <label id="input__describe" class="floating__label" data-content="I would describe my user type as"></label>
+          <small>Error message</small>
+        </div> -->
+
+        <!-- <div class="form-control">
+          <div class="dropdown">
+            <label>I would describe my user type as</label>
+            <div class="dropdown-content">
+              <a href="#">Developer</a>
+              <a href="#">Engineer</a>
+              <a href="#">Others</a>
+            </div>
+          </div>
+          <small>Error message</small>
+        </div> -->
+
+        <div class="form-control">
+          <select class="dropdown" id="describe">
+            <option value="developer">Developer</option>
+            <option value="engineer">Engineer</option>
+            <option value="teacher">Teacher</option>
+            <option value="other">Other</option>
+          </select>
+          <small>Error message</small>
+        </div>
+        
+        <div class="form-control floating">
+          <input id="password" type="password" class="floating__input" name="password" placeholder="Password" value="" />
+          <label id="input__password" class="floating__label" data-content="Password"></label>
+          <small>Error message</small>
+        </div>
+        <p>Minimum 8 characters</p>
+        <button type="submit">Next</button>
+        <div>By clicking the "Next" button, you agree to creating a free account, and to <a href="">Terms of Service</a> and <a href="">Privacy Policy</a></div>
+      </form>
+      
+      <div class="right-container">
+        <h2 id="dummy-heading">Dummy Heading</h2>
+        <p class="paragraph-input">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
